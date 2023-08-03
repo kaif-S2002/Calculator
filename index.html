@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <div class="container">
+      <div class="calc">
+        <div class="display">
+          <input type="text" name="display" id="textInput" />
+        </div>
+        <div class="num-pad">
+          <input
+            type="button"
+            class="spe"
+            value="AC"
+            onclick="textInput.value = ''"
+          />
+          <input
+            type="button"
+            class="spe"
+            value="DE"
+            onclick="textInput.value = textInput.value.toString().slice(0, -1)"
+          />
+          <input
+            type="button"
+            class="spe"
+            value="%"
+            onclick="textInput.value += '%'"
+          />
+          <input
+            type="button"
+            class="sop"
+            value="/"
+            onclick="textInput.value += '/'"
+          />
+        </div>
+        <div class="num-pad">
+          <input type="button" value="7" onclick="textInput.value += '7' " />
+          <input type="button" value="8" onclick="textInput.value += '8'" />
+          <input type="button" value="9" onclick="textInput.value += '9'" />
+          <input
+            type="button"
+            class="sop"
+            value="*"
+            onclick="textInput.value += '*'"
+          />
+        </div>
+        <div class="num-pad">
+          <input type="button" value="4" onclick="textInput.value += '4'" />
+          <input type="button" value="5" onclick="textInput.value += '5'" />
+          <input type="button" value="6" onclick="textInput.value += '6'" />
+          <input
+            type="button"
+            class="sop"
+            value="-"
+            onclick="textInput.value += '-'"
+          />
+        </div>
+        <div class="num-pad">
+          <input type="button" value="1" onclick="textInput.value += '1'" />
+          <input type="button" value="2" onclick="textInput.value += '2'" />
+          <input type="button" value="3" onclick="textInput.value += '3'" />
+          <input
+            type="button"
+            class="sop"
+            value="+"
+            onclick="textInput.value += '+'"
+          />
+        </div>
+        <div class="num-pad">
+          <input type="button" value="00" onclick="textInput.value += '00'" />
+          <input type="button" value="0" onclick="textInput.value += '0'" />
+          <input type="button" value="." onclick="textInput.value += '.'" />
+          <input
+            type="button"
+            class="sop"
+            value="="
+            onclick="textInput.value = eval(textInput.value)"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
