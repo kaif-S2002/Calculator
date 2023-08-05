@@ -9,6 +9,13 @@
 
   <body>
     <div class="container">
+      <div class="heading">
+        <h1>Basic Calculator Project</h1>
+        <li>HTML.</li>
+        <li>CSS.</li>
+        <li>JAVASCRIPT.</li>
+        <p>* Created & designed by - { Kaif Siddiqui }.</p>
+      </div>
       <div class="calc">
         <div class="display">
           <input type="text" name="display" id="textInput" />
@@ -34,7 +41,7 @@
           />
           <input
             type="button"
-            class="sop"
+            class="operators"
             value="/"
             onclick="textInput.value += '/'"
           />
@@ -45,8 +52,8 @@
           <input type="button" value="9" onclick="textInput.value += '9'" />
           <input
             type="button"
-            class="sop"
-            value="*"
+            class="operators"
+            value="x"
             onclick="textInput.value += '*'"
           />
         </div>
@@ -56,7 +63,7 @@
           <input type="button" value="6" onclick="textInput.value += '6'" />
           <input
             type="button"
-            class="sop"
+            class="operators"
             value="-"
             onclick="textInput.value += '-'"
           />
@@ -67,7 +74,7 @@
           <input type="button" value="3" onclick="textInput.value += '3'" />
           <input
             type="button"
-            class="sop"
+            class="operators"
             value="+"
             onclick="textInput.value += '+'"
           />
@@ -78,7 +85,7 @@
           <input type="button" value="." onclick="textInput.value += '.'" />
           <input
             type="button"
-            class="sop"
+            class="operators"
             value="="
             onclick="textInput.value = eval(textInput.value)"
           />
