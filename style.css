@@ -12,12 +12,13 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background: rgb(231, 231, 231);
+  background: rgb(211, 211, 211);
 }
 .calc {
   padding: 30px 15px;
   background: black;
   border-radius: 40px;
+  user-select: none;
 }
 .calc input {
   margin: 5px;
@@ -32,6 +33,9 @@
   cursor: pointer;
   background: rgba(88, 88, 88, 0.651);
 }
+.calc input:active {
+  background: rgba(146, 146, 146, 0.651);
+}
 .display {
   margin-bottom: 10px;
 }
@@ -40,16 +44,30 @@
   margin-top: 60px;
   height: 100%;
   width: 278px;
-  font-size: 45px;
+  font-size: 50px;
   text-align: right;
   font-weight: 400;
   color: white;
   border-radius: 10px;
   background: transparent;
 }
-.num-pad .sop {
+.num-pad .operators {
   background: rgb(255, 160, 17);
+}
+.num-pad .operators:active {
+  background: rgb(255, 127, 21);
 }
 .num-pad .spe {
   background: grey;
+}
+.num-pad .spe:active {
+  background: rgb(94, 94, 94);
+}
+.heading {
+  transform: translateX(-25%);
+  font-size: 26px;
+}
+.heading p {
+  transform: translateY(1000%);
+  font-size: 12px;
 }
